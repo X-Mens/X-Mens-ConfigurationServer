@@ -1,0 +1,8 @@
+gretting:
+  name: I AM PROD
+
+logging:
+  level:
+    org:
+      springframework:
+        cache: INFO

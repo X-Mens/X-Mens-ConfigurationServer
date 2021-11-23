@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "config-server"
+  profiles:
+    active: native, git  # indicates that the configuration files are going to be retrieved or read from the classpath or filesystem
+  cloud:
+    config:
+      server:
+        native:
+          # read configuration file as stored
+          search-locations: classpath:/config
+        git:
+          uri: https://github.com/CrkJohn/ConfigFilesExample.git
+          search-paths: dev, prd
+          default-label: "develop"
+

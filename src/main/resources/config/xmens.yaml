@@ -1,0 +1,7 @@
+xmens: i am default configuration
+
+logging:
+  level:
+    org:
+      springframework:
+        cache: DEBUG

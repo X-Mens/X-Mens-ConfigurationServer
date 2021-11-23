@@ -1,0 +1,18 @@
+server:
+  port: 8071
+
+management:
+  endpoints:
+    web:
+      discovery:
+        enabled: true
+      exposure:
+        include: "health,info,refresh"
+    enabled-by-default: false
+  endpoint:
+    info:
+      enabled: true
+    health:
+      enabled: true
+    refresh:
+      enabled: true
